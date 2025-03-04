@@ -3,7 +3,7 @@ const mqtt = require('mqtt');
 // Connect to the broker with authentication
 const client = mqtt.connect('mqtt://localhost', {
   username: 'yourusername',
-  password: '$7$101$uZ7Lmk07dFZ3wM9z$tELFsfiUezjGfxnhD28Y7dfWIWoC9ghPUg6h54WwEPq9QpJo7mKU9aZuOpwvU7thlQUpVbyispVbZQ3aZW4gSA=='
+  password: 'qwerty'
 });
 
 client.on('connect', () => {
@@ -16,3 +16,4 @@ client.on('connect', () => {
     client.publish('sensor/temperature', temperature);
   }, 2000);
 });
+// mqtt

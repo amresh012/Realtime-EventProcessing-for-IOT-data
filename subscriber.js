@@ -3,7 +3,7 @@ const mqtt = require('mqtt');
 // Connect to the broker with authentication
 const client = mqtt.connect('mqtt://localhost', {
   username: 'yourusername',
-  password: 'yourpassword'
+  password: 'qwerty'
 });
 
 client.on('connect', () => {
